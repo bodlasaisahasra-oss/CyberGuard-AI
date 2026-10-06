@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090c15">
+  <meta name="description" content="CyberGuard AI helps you build safer habits online with practical security tools and guidance.">
+  <title>CyberGuard AI | Think Safe. Click Safe.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <div class="sidebar-scrim" data-close-sidebar></div>
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" data-view-link="home" aria-label="CyberGuard AI home">
+        <span class="brand-mark"><i data-lucide="shield-check"></i></span>
+        <span class="brand-copy"><strong>CyberGuard <em>AI</em></strong><small>Think Safe. Click Safe.</small></span>
+      </a>
+      <div class="nav-caption">WORKSPACE</div>
+      <nav class="side-nav">
+        <button class="nav-link active" type="button" data-view="home"><i data-lucide="house"></i><span>Home</span></button>
+        <button class="nav-link" type="button" data-view="chat"><i data-lucide="message-circle"></i><span>Chatbot</span><span class="nav-dot"></span></button>
+        <button class="nav-link" type="button" data-view="phishing"><i data-lucide="scan-search"></i><span>Phishing Detector</span></button>
+        <button class="nav-link" type="button" data-view="quiz"><i data-lucide="trophy"></i><span>Cybersecurity Quiz</span></button>
+        <button class="nav-link" type="button" data-view="learning"><i data-lucide="book-open-check"></i><span>Learning Center</span></button>
+        <button class="nav-link" type="button" data-view="score"><i data-lucide="chart-no-axes-column-increasing"></i><span>Safety Score</span></button>
+      </nav>
+      <div class="nav-caption nav-caption-lower">PREFERENCES</div>
+      <nav class="side-nav"><button class="nav-link" type="button" data-view="settings"><i data-lucide="settings-2"></i><span>Settings</span></button></nav>
+      <div class="sidebar-bottom">
+        <button class="secure-note" id="stay-aware-link" type="button" data-go="stay-aware" aria-label="Open Stay Aware Hub"><span class="secure-icon"><i data-lucide="shield-check"></i></span><span><strong>Stay Aware</strong><small>Stay Secure</small></span><i class="secure-spark" data-lucide="arrow-right"></i></button>
+        <div class="sidebar-foot">CYBERGUARD AI <span>•</span> v1.0</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" type="button" id="menu-toggle" aria-label="Open navigation"><i data-lucide="menu"></i></button>
+        <div class="crumb"><span>Workspace</span><i data-lucide="chevron-right"></i><strong id="page-crumb">Home</strong></div>
+        <div class="topbar-actions"><span class="secure-status"><span></span> All systems secure</span><div class="notification-wrap"><button class="icon-button top-bell" id="notification-toggle" type="button" aria-label="Notifications, 3 unread" aria-expanded="false" aria-controls="notification-panel"><i data-lucide="bell"></i><span class="notification-count" id="notification-count">3</span></button><section class="notification-panel" id="notification-panel" aria-label="Notifications" hidden><div class="notification-heading"><div><strong>Notifications</strong><small id="notification-summary">3 unread updates</small></div><button class="text-button" id="mark-notifications-read" type="button">Mark all read</button></div><ul class="notification-list"><li class="unread"><span class="notification-icon"><i data-lucide="shield-check"></i></span><div><strong>Security reminder</strong><p>Turn on multi-factor authentication for your important accounts.</p><small>Today</small></div></li><li class="unread"><span class="notification-icon"><i data-lucide="book-open-check"></i></span><div><strong>Keep learning</strong><p>Explore a short guide in the Learning Center.</p><small>This week</small></div></li><li class="unread"><span class="notification-icon"><i data-lucide="scan-search"></i></span><div><strong>Pause before you click</strong><p>Check unexpected links before opening them.</p><small>Security tip</small></div></li></ul></section></div><button class="profile-trigger" type="button" data-go="login" aria-label="Open your profile and sign in"><span class="top-avatar">JD</span><i class="profile-chevron" data-lucide="chevron-down"></i></button></div>
+      </header>
+
+      <div class="view-container">
+        <section class="view active" id="view-home" data-title="Home">
+          <div class="welcome-grid">
+            <div class="welcome-copy">
+              <div class="eyebrow"><span class="live-pulse"></span> YOUR PERSONAL SECURITY COMPANION</div>
+              <h1>Hello! <span class="wave">👋</span></h1>
+              <h2>I’m your Cybersecurity<br class="desktop-break"> Awareness Chatbot.</h2>
+              <p>I’m here to help you stay safe online. Ask me anything about cyber threats, scams, password safety, or use the tools below.</p>
+              <button class="primary-button" type="button" data-go="chat">Start a conversation <i data-lucide="arrow-up-right"></i></button>
+            </div>
+            <aside class="assistant-card">
+              <div class="assistant-card-top"><span class="assistant-online"><i></i> AI ASSISTANT</span><span class="assistant-spark"><i data-lucide="sparkles"></i></span></div>
+              <img class="robot-art" src="assets/cyber-robot.svg" alt="Friendly futuristic robot holding a glowing shield">
+              <div class="home-robot-bubble">Hi! I’m your CyberGuard Assistant.<br>Let’s build a safer digital you!</div>
+              <div class="assistant-card-copy"><h3>Your safety online matters. <span>🚀</span></h3><p>Ask me anything or choose a feature from the left menu.</p><button class="text-link" type="button" data-go="chat">Talk to your assistant <i data-lucide="arrow-right"></i></button></div>
+            </aside>
+          </div>
+
+          <section class="home-tip-widget panel" aria-label="Security Tip of the Day">
+            <span class="home-tip-icon"><i data-lucide="lightbulb"></i></span>
+            <div class="home-tip-copy"><span class="eyebrow">SECURITY TIP OF THE DAY</span><p id="home-tip-text">Never share an OTP, even if someone claims to be from your bank.</p><button class="text-link" type="button" data-go="learning">Learn why <i data-lucide="arrow-right"></i></button></div>
+            <div class="home-tip-controls"><button type="button" id="home-tip-prev" aria-label="Previous security tip"><i data-lucide="chevron-left"></i></button><div id="home-tip-dots" aria-label="Security tip position"></div><button type="button" id="home-tip-next" aria-label="Next security tip"><i data-lucide="chevron-right"></i></button></div>
+          </section>
+
+          <div class="section-heading"><div><span class="eyebrow">YOUR TOOLKIT</span><h2>Make your next click a safer one</h2></div><span class="section-note">Everything you need, in one place</span></div>
+          <div class="feature-grid">
+            <button class="feature-card feature-blue" type="button" data-go="phishing"><span class="feature-icon"><i data-lucide="scan-search"></i></span><span class="feature-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Detect Phishing</strong><small>Check suspicious emails, links or messages</small><span class="feature-bottom">OPEN DETECTOR <i data-lucide="move-right"></i></span></button>
+            <button class="feature-card feature-violet" type="button" data-go="quiz"><span class="feature-icon"><i data-lucide="trophy"></i></span><span class="feature-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Take a Quiz</strong><small>Test your cybersecurity knowledge</small><span class="feature-bottom">TEST YOURSELF <i data-lucide="move-right"></i></span></button>
+            <button class="feature-card feature-cyan" type="button" data-go="learning"><span class="feature-icon"><i data-lucide="book-open-check"></i></span><span class="feature-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Learn &amp; Grow</strong><small>Explore cybersecurity topics</small><span class="feature-bottom">EXPLORE TOPICS <i data-lucide="move-right"></i></span></button>
+            <button class="feature-card feature-amber" type="button" data-go="score"><span class="feature-icon"><i data-lucide="shield-check"></i></span><span class="feature-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Check Your Score</strong><small>See how safe you are online</small><span class="feature-bottom">VIEW YOUR SCORE <i data-lucide="move-right"></i></span></button>
+          </div>
+
+          <section class="quick-chat panel">
+            <div class="quick-chat-heading"><span class="chat-avatar"><i data-lucide="bot"></i></span><div><h3>Ask CyberGuard</h3><p>Get a clear, practical answer in seconds.</p></div><span class="response-time"><i></i> Typically replies instantly</span></div>
+            <form class="composer quick-composer" data-chat-form="home"><label class="sr-only" for="home-message">Type your message</label><input id="home-message" name="message" placeholder="Type your message..." autocomplete="off"><button class="send-button" type="submit" aria-label="Send message"><i data-lucide="arrow-up"></i></button></form>
+            <div class="suggestions"><span>TRY ASKING</span><button type="button" data-prompt="Is this email safe?">Is this email safe?</button><button type="button" data-prompt="How do I create a strong password?">How do I create a strong password?</button><button type="button" data-prompt="What should I do if I clicked a suspicious link?">What should I do if I clicked a suspicious link?</button></div>
+          </section>
+          <section class="home-motivation-widget panel">
+            <div class="home-mountain-art" aria-hidden="true"><span>✦</span><span>·</span><span>✧</span></div>
+            <div><span class="eyebrow">ONE GOOD HABIT AT A TIME</span><h2>Better habits <span>=</span> Safer tomorrow</h2></div>
+            <button class="secondary-button" type="button" data-go="quiz">Keep Going <i data-lucide="arrow-right"></i></button>
+          </section>
+        </section>
+
+        <section class="view" id="view-chat" data-title="Chatbot">
+          <div class="page-heading"><div><span class="eyebrow">YOUR SECURITY COPILOT</span><h1>CyberGuard Chat</h1><p>Ask anything about staying safer online. Clear answers, no judgment.</p></div><button class="secondary-button" id="clear-chat" type="button"><i data-lucide="trash-2"></i> Clear chat</button></div>
+          <div class="chat-layout panel">
+            <div class="chat-toolbar"><div class="chat-assistant-id"><span class="chat-avatar"><i data-lucide="bot"></i></span><span><strong>CyberGuard AI</strong><small><i></i> Online and ready</small></span></div><span class="privacy-label"><i data-lucide="lock-keyhole"></i> Private session</span></div>
+            <div class="chat-messages" id="chat-messages" aria-live="polite" aria-label="Chat messages"></div>
+            <div class="chat-bottom"><div class="suggestions chat-suggestions"><span>QUICK PROMPTS</span><button type="button" data-prompt="Is this email safe?">Check an email</button><button type="button" data-prompt="How do I create a strong password?">Strong passwords</button><button type="button" data-prompt="What should I do if I clicked a suspicious link?">Clicked a suspicious link</button></div><form class="composer chat-composer" data-chat-form="chat"><label class="sr-only" for="chat-message">Message CyberGuard</label><input id="chat-message" name="message" placeholder="Message CyberGuard..." autocomplete="off"><button class="send-button" type="submit" aria-label="Send message"><i data-lucide="arrow-up"></i></button></form><p class="chat-disclaimer">AI guidance can make mistakes. Never share passwords, verification codes, or sensitive personal details.</p></div>
+          </div>
+        </section>
+
+        <section class="view" id="view-phishing" data-title="Phishing Detector">
+          <div class="page-heading"><div><span class="eyebrow">THINK BEFORE YOU CLICK</span><h1>Phishing Detector</h1><p>Check a message for common signs of phishing and online fraud.</p></div><span class="local-badge"><i data-lucide="shield-check"></i> Private analysis · runs on this device</span></div>
+          <div class="detector-layout">
+            <div class="panel detector-input-panel"><div class="panel-title"><span class="panel-icon icon-blue"><i data-lucide="scan-search"></i></span><div><h2>Inspect a message</h2><p>Paste an email, text, URL, or social message below.</p></div></div>
+              <div class="content-type" role="group" aria-label="Message type"><button class="type-chip active" type="button" data-content-type="Email">Email</button><button class="type-chip" type="button" data-content-type="SMS">SMS</button><button class="type-chip" type="button" data-content-type="Website URL">Website URL</button><button class="type-chip" type="button" data-content-type="Social message">Social message</button></div>
+              <label class="field-label" for="phishing-input">MESSAGE CONTENT <span id="content-type-label">EMAIL</span></label><textarea id="phishing-input" placeholder="Paste the full message here, including any links or sender details..." rows="9"></textarea>
+              <div class="field-foot"><span><i data-lucide="lock-keyhole"></i> Your message stays in this browser</span><span id="char-count">0 characters</span></div>
+              <div class="detector-actions"><button class="primary-button analyze-button" type="button" id="analyze-button"><i data-lucide="scan-line"></i> Analyze message</button><button class="text-button" type="button" id="load-sample">Try a sample</button></div>
+              <p class="disclaimer"><i data-lucide="info"></i> This demo uses pattern matching, not a live threat-intelligence service. Verify important messages independently.</p>
+            </div>
+            <div class="panel analysis-panel" id="analysis-panel"><div class="analysis-empty"><span class="empty-orbit"><i data-lucide="shield-check"></i></span><h3>Your analysis will appear here</h3><p>Paste a message and select <strong>Analyze message</strong> to check for common warning signs.</p><div class="empty-checks"><span><i data-lucide="check"></i> Urgency cues</span><span><i data-lucide="check"></i> Suspicious links</span><span><i data-lucide="check"></i> Sensitive requests</span></div></div></div>
+          </div>
+        </section>
+
+        <section class="view" id="view-quiz" data-title="Cybersecurity Quiz">
+          <div class="page-heading"><div><span class="eyebrow">SMALL HABITS, STRONGER DEFENSES</span><h1>Cybersecurity Quiz</h1><p>Choose from 20 short assessments, each with five questions.</p></div><span class="quiz-best" id="quiz-best"><i data-lucide="trophy"></i> Best score <strong>--</strong></span></div>
+          <div class="assessment-grid" id="assessment-grid" aria-label="Choose a cybersecurity assessment"></div>
+          <div class="quiz-shell panel" id="quiz-shell" hidden></div>
+        </section>
+
+        <section class="view" id="view-learning" data-title="Learning Center">
+          <div class="page-heading"><div><span class="eyebrow">KNOWLEDGE IS YOUR BEST DEFENSE</span><h1>Learning Center</h1><p>Practical guides for the moments that matter online.</p></div><span class="learning-count"><i data-lucide="book-open"></i> 8 quick guides</span></div>
+          <div class="learning-grid" id="learning-grid"></div>
+        </section>
+
+        <section class="view" id="view-score" data-title="Safety Score">
+          <div class="page-heading"><div><span class="eyebrow">YOUR PERSONAL SECURITY SNAPSHOT</span><h1>Safety Score</h1><p>Your score reflects helpful security habits and quiz performance.</p></div><button class="secondary-button" type="button" data-go="quiz"><i data-lucide="refresh-cw"></i> Retake assessment</button></div>
+          <div class="score-overview panel"><div class="score-ring-wrap"><div class="score-ring" id="score-ring"><div class="score-ring-center"><strong id="score-value">82</strong><span>OUT OF 100</span></div></div><div class="score-level"><span class="level-dot"></span><strong id="score-grade">GOOD</strong></div><p class="score-updated">Updated just now</p></div><div class="score-summary"><span class="eyebrow">YOUR SECURITY POSTURE</span><h2>A strong start, with room to level up.</h2><p>You’re building good habits. A few small improvements can make your accounts and personal information much harder to target.</p><div class="score-callout"><span><i data-lucide="sparkles"></i></span><div><strong id="score-callout-title">Your next best move</strong><p id="score-callout-copy">Turn on multi-factor authentication for your email and financial accounts.</p></div></div><button class="text-link" type="button" data-go="learning">Explore security guides <i data-lucide="arrow-right"></i></button></div></div>
+          <div class="section-heading score-breakdown-heading"><div><span class="eyebrow">THE DETAILS</span><h2>Your security breakdown</h2></div><span class="section-note">Based on your current habits</span></div>
+          <div class="breakdown-grid" id="score-breakdown"></div>
+          <div class="recommendations panel"><div class="recommendation-heading"><span class="panel-icon icon-amber"><i data-lucide="list-checks"></i></span><div><h2>Personalized recommendations</h2><p>Two small actions can make a real difference.</p></div></div><div class="recommendation-list"><div><span class="rec-number">01</span><span><strong>Enable multi-factor authentication</strong><small>Start with your email, banking, and social accounts.</small></span><button type="button" data-go="learning" aria-label="Learn about account security"><i data-lucide="arrow-up-right"></i></button></div><div><span class="rec-number">02</span><span><strong>Pause before urgent requests</strong><small>Contact the organization through a trusted channel.</small></span><button type="button" data-go="phishing" aria-label="Check a suspicious message"><i data-lucide="arrow-up-right"></i></button></div><div><span class="rec-number">03</span><span><strong>Use a unique password for every account</strong><small>A password manager makes this easier to maintain.</small></span><button type="button" data-go="learning" aria-label="Learn about passwords"><i data-lucide="arrow-up-right"></i></button></div></div></div>
+        </section>
+
+        <section class="view" id="view-settings" data-title="Settings">
+          <div class="page-heading"><div><span class="eyebrow">MAKE IT YOURS</span><h1>Settings</h1><p>Adjust your CyberGuard experience on this device.</p></div></div>
+          <div class="settings-layout"><div class="panel settings-panel"><div class="settings-group-title"><span class="panel-icon icon-cyan"><i data-lucide="sliders-horizontal"></i></span><div><h2>Preferences</h2><p>These settings are saved locally in your browser.</p></div></div>
+            <label class="setting-row"><span><strong>Notification alerts</strong><small>Show reminders about safer online habits.</small></span><input class="toggle-input" type="checkbox" id="setting-notifications"><span class="toggle-ui"></span></label>
+            <label class="setting-row"><span><strong>Reduce motion</strong><small>Limit decorative animations and transitions.</small></span><input class="toggle-input" type="checkbox" id="setting-motion"><span class="toggle-ui"></span></label>
+            <div class="setting-row"><span><strong>Background appearance</strong><small>Choose dark or light colors.</small></span><div class="theme-switch" role="group" aria-label="Background appearance"><button class="theme-choice" type="button" data-theme-choice="dark" aria-label="Dark background" title="Dark background"><i data-lucide="moon"></i></button><button class="theme-choice" type="button" data-theme-choice="light" aria-label="Light background" title="Light background"><i data-lucide="sun"></i></button></div></div>
+            <div class="setting-row setting-static"><span><strong>AI response mode</strong><small>Responses are generated by your local Ollama model.</small></span><span class="coming-soon">LOCAL OLLAMA</span></div>
+          </div><div class="panel settings-about"><span class="about-mark"><i data-lucide="shield-check"></i></span><h2>CyberGuard AI</h2><p>Think Safe. Click Safe.</p><div class="about-divider"></div><div><span>Version</span><strong>1.0.0</strong></div><div><span>Data storage</span><strong>This device only</strong></div><div><span>AI connection</span><strong>Local Ollama</strong></div></div></div>
+        </section>
+
+        <section class="view login-view" id="view-login" data-title="Sign in">
+          <div class="login-layout">
+            <div class="login-intro">
+              <span class="about-mark"><i data-lucide="shield-check"></i></span>
+              <span class="eyebrow">YOUR CYBERGUARD PROFILE</span>
+              <h1>Welcome back.</h1>
+              <p>Sign in to access your personal CyberGuard profile.</p>
+              <button class="text-link" type="button" data-go="home"><i data-lucide="arrow-left"></i> Back to dashboard</button>
+            </div>
+            <div class="login-panel panel">
+              <div class="login-gate" id="login-gate">
+                <span class="panel-icon icon-cyan"><i data-lucide="user-round"></i></span>
+                <h2>Sign in to CyberGuard</h2>
+                <p>Continue to your account.</p>
+                <button class="primary-button" id="show-login-form" type="button"><i data-lucide="log-in"></i> Login</button>
+              </div>
+              <form class="login-form" id="login-form" hidden>
+                <h2>Login details</h2>
+                <label for="login-email">Email address</label>
+                <input id="login-email" name="email" type="email" autocomplete="username" required placeholder="you@example.com">
+                <label for="login-password">Password</label>
+                <div class="password-field"><input id="login-password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password"><button class="password-visibility" id="toggle-password" type="button" aria-label="Show password" title="Show password"><i data-lucide="eye"></i></button></div>
+                <button class="primary-button" type="submit"><i data-lucide="log-in"></i> Continue</button>
+                <p class="login-status" id="login-status" role="status" aria-live="polite"></p>
+                <p class="login-demo-note">Demo sign-in only. Authentication is not configured; details are not sent or saved.</p>
+              </form>
+            </div>
+          </div>
+          <section class="plans-section" aria-labelledby="plans-title">
+            <div class="plans-heading"><span class="eyebrow">ACCOUNT OPTIONS</span><h2 id="plans-title">Choose your plan</h2><p>Plan selection is a preview. Subscription checkout is not enabled.</p></div>
+            <div class="plans-grid">
+              <article class="plan-card">
+                <span class="plan-kind">FREE</span><h3>Starter</h3><p class="plan-price">Free</p><p>Core tools to build safer online habits.</p>
+                <ul><li>Phishing message checks</li><li>All 20 quiz assessments</li><li>Eight learning guides</li></ul>
+                <button class="secondary-button" type="button" data-plan="Starter">Choose free plan</button>
+              </article>
+              <article class="plan-card plan-featured">
+                <span class="plan-kind">SUBSCRIPTION</span><h3>Plus</h3><p class="plan-price">Paid plan</p><p>More structure for individual learners.</p>
+                <ul><li>Guided learning paths</li><li>Saved assessment history</li><li>New topic packs</li></ul>
+                <button class="primary-button" type="button" data-plan="Plus">Choose Plus</button>
+              </article>
+              <article class="plan-card">
+                <span class="plan-kind">SUBSCRIPTION</span><h3>Family</h3><p class="plan-price">Paid plan</p><p>Shared safety learning for a household.</p>
+                <ul><li>Multiple learner profiles</li><li>Family safety checklists</li><li>Group learning progress</li></ul>
+                <button class="secondary-button" type="button" data-plan="Family">Choose Family</button>
+              </article>
+            </div>
+            <p class="plan-status" id="plan-status" role="status" aria-live="polite">Starter free plan selected. Plan access is a preview.</p>
+          </section>
+        </section>
+
+        <section class="view stay-aware-view" id="view-stay-aware" data-title="Stay Aware Hub">
+          <div class="hub-page">
+            <div class="hub-dashboard-grid">
+              <div class="hub-primary-column">
+                <section class="hub-hero panel">
+                  <div class="hub-hero-copy">
+                    <span class="eyebrow"><span class="live-pulse"></span> YOUR CYBERSECURITY COMMAND CENTER</span>
+                    <h1><span>Stay Aware,</span><br><strong>Stay Secure</strong> <span class="hub-hero-shield">🛡️</span></h1>
+                    <h2>Your personal cybersecurity command center.</h2>
+                    <p>Get real-time threat updates, check your privacy, secure your devices, manage your accounts and stay one step ahead.</p>
+                    <div class="hub-pill-row"><span>👁 Be Aware</span><span>⚡ Take Action</span><span>🛡 Stay Safe</span></div>
+                  </div>
+                  <div class="hub-shield-scene" aria-hidden="true"><div class="hub-shield-orbit"></div><div class="hub-shield-mark"><i data-lucide="shield"></i><i data-lucide="lock-keyhole"></i></div><span class="hub-shield-spark hub-spark-one"></span><span class="hub-shield-spark hub-spark-two"></span></div>
+                </section>
+
+                <section class="hub-assistant panel">
+                  <div class="hub-robot-wrap"><span class="hub-robot-shield"><i data-lucide="shield-check"></i></span><img src="assets/cyber-robot.svg" alt="CyberGuard AI cybersecurity assistant robot"></div>
+                  <div class="hub-assistant-copy"><span class="assistant-online"><i></i> CYBERGUARD AI ASSISTANT</span><p>“Hi! I'm your CyberGuard Assistant. I'm here to help you stay safe online. Let's build a safer digital you!”</p><button class="text-link" type="button" data-go="chat">Ask CyberBot <i data-lucide="arrow-right"></i></button></div>
+                </section>
+              </div>
+
+              <aside class="hub-side-column">
+                <section class="hub-status panel">
+                  <div class="hub-card-heading"><div><span class="eyebrow">YOUR SECURITY SNAPSHOT</span><h2>Security Status</h2></div><span class="hub-status-live"><i></i> LIVE</span></div>
+                  <div class="hub-status-main"><div class="hub-score-ring" role="img" aria-label="85 percent overall safety score"><div><strong>85%</strong><small>OVERALL</small></div></div><div><span class="hub-protected"><i data-lucide="shield-check"></i> PROTECTED</span><p>Overall Safety Score</p></div></div>
+                  <div class="hub-actions-callout"><span>🔥</span><p>You have <strong id="hub-pending-actions">3 security actions</strong><br>to complete today.</p></div>
+                  <button class="primary-button hub-full-button" type="button" data-hub-tool="actions">View My Actions <i data-lucide="arrow-right"></i></button>
+                </section>
+
+                <section class="hub-threats panel">
+                  <div class="hub-card-heading"><div><h2>🔥 Current Threats</h2></div><span class="threat-feed-badge"><i></i> LIVE THREAT FEED</span></div>
+                  <div class="hub-threat-list">
+                    <button type="button" data-threat="delivery"><span class="threat-dot threat-high"></span><span>Fake delivery SMS</span><strong class="severity-high">High</strong></button>
+                    <button type="button" data-threat="job"><span class="threat-dot threat-high"></span><span>Job / internship scams</span><strong class="severity-high">High</strong></button>
+                    <button type="button" data-threat="qr"><span class="threat-dot threat-medium"></span><span>QR code scams</span><strong class="severity-medium">Medium</strong></button>
+                    <button type="button" data-threat="phishing"><span class="threat-dot threat-medium"></span><span>Phishing emails</span><strong class="severity-medium">Medium</strong></button>
+                    <button type="button" data-threat="malware"><span class="threat-dot threat-low"></span><span>Malware attachments</span><strong class="severity-low">Low</strong></button>
+                  </div>
+                  <p class="hub-threat-note">Awareness feed only · no live threat-intelligence connection.</p>
+                  <button class="text-link" type="button" data-hub-tool="threats">View All Threats <i data-lucide="arrow-right"></i></button>
+                </section>
+              </aside>
+            </div>
+
+            <section class="hub-tools-section" aria-labelledby="hub-tools-title">
+              <div class="hub-section-heading"><div><span class="eyebrow">YOUR NEXT SAFE STEP</span><h2 id="hub-tools-title">🚀 Quick Access Tools</h2><p>Get started with essential cybersecurity features.</p></div><span class="hub-section-index">01 / PERSONAL SECURITY</span></div>
+              <div class="hub-tools-grid">
+                <article class="hub-tool-card tool-threat"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">🚨</span><h3>Today's Threat Brief</h3><p>Latest cyber threats, scams and what to watch for.</p><button type="button" data-hub-tool="threats">View Threats <i data-lucide="arrow-right"></i></button></article>
+                <article class="hub-tool-card tool-privacy"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">🔐</span><h3>Privacy Checkup</h3><p>Review your privacy settings and reduce your digital footprint.</p><button type="button" data-hub-tool="privacy">Start Checkup <i data-lucide="arrow-right"></i></button></article>
+                <article class="hub-tool-card tool-device"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">📱</span><h3>Device Safety Center</h3><p>Check your device health and security settings.</p><button type="button" data-hub-tool="device">Run Device Check <i data-lucide="arrow-right"></i></button></article>
+                <article class="hub-tool-card tool-wifi"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">📶</span><h3>Wi-Fi Safety Check</h3><p>See if your network is safe and get smart tips.</p><button type="button" data-hub-tool="wifi">Check Network <i data-lucide="arrow-right"></i></button></article>
+                <article class="hub-tool-card tool-emergency"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">🛡️</span><h3>Emergency Cyber Guide</h3><p>Facing a cyber issue? Get step-by-step help, fast.</p><button type="button" data-hub-tool="emergency">Get Help Now <i data-lucide="arrow-right"></i></button></article>
+                <article class="hub-tool-card tool-accounts"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">👤</span><h3>Account Protection Center</h3><p>Review and strengthen your accounts.</p><button type="button" data-hub-tool="accounts">Review Accounts <i data-lucide="arrow-right"></i></button></article>
+                <article class="hub-tool-card tool-cleanup"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">🧹</span><h3>Digital Cleanup</h3><p>Remove old data, unused apps and risky permissions.</p><button type="button" data-hub-tool="cleanup">Start Cleanup <i data-lucide="arrow-right"></i></button></article>
+                <article class="hub-tool-card tool-calendar"><span class="hub-new-badge">NEW</span><span class="hub-tool-icon">📅</span><h3>Security Calendar</h3><p>Stay on track with your security habits.</p><button type="button" data-hub-tool="calendar">View Calendar <i data-lucide="arrow-right"></i></button></article>
+              </div>
+            </section>
+
+            <div class="hub-bottom-grid">
+              <div class="hub-bottom-main">
+                <section class="hub-journey panel">
+                  <div class="hub-section-heading"><div><span class="eyebrow">SMALL STEPS, STRONGER HABITS</span><h2>👣 Your Security Journey</h2><p>Track your progress and build better habits.</p></div><button class="text-link" type="button" data-hub-tool="report">View Detailed Report <i data-lucide="arrow-right"></i></button></div>
+                  <div class="journey-track" id="journey-track">
+                    <div class="journey-step"><span class="journey-node"><i data-lucide="key-round"></i></span><strong>Account Security</strong><span class="journey-value" data-journey="accounts">75%</span><div class="journey-progress"><i style="--journey-progress:75%"></i></div></div>
+                    <span class="journey-connector"></span>
+                    <div class="journey-step"><span class="journey-node"><i data-lucide="eye"></i></span><strong>Privacy Settings</strong><span class="journey-value" data-journey="privacy">50%</span><div class="journey-progress"><i style="--journey-progress:50%"></i></div></div>
+                    <span class="journey-connector"></span>
+                    <div class="journey-step"><span class="journey-node"><i data-lucide="smartphone"></i></span><strong>Device Security</strong><span class="journey-value" data-journey="device">80%</span><div class="journey-progress"><i style="--journey-progress:80%"></i></div></div>
+                    <span class="journey-connector"></span>
+                    <div class="journey-step"><span class="journey-node"><i data-lucide="badge-check"></i></span><strong>Awareness Quiz</strong><span class="journey-value" data-journey="quiz">60%</span><div class="journey-progress"><i style="--journey-progress:60%"></i></div></div>
+                    <span class="journey-connector"></span>
+                    <div class="journey-step"><span class="journey-node"><i data-lucide="shield-check"></i></span><strong>Overall Score</strong><span class="journey-value" data-journey="overall">85%</span><div class="journey-progress"><i style="--journey-progress:85%"></i></div></div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="hub-bottom-side">
+                <section class="hub-ask-card panel"><span class="hub-ask-icon"><i data-lucide="bot"></i></span><div><span class="eyebrow">CYBERGUARD AI</span><h2>Need help?</h2><p>Ask CyberBot!</p></div><button type="button" data-go="chat" aria-label="Open the existing CyberGuard chatbot"><i data-lucide="arrow-right"></i></button></section>
+              </div>
+            </div>
+            <footer class="hub-footer"><span>🛡️ Stay Aware <i>•</i> Stay Secure <i>•</i> Stay Ahead</span><span>♡ CyberGuard AI | Your Safety, Our Priority</span></footer>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer"><span>CyberGuard AI <span>©</span> 2026</span><span>Stay Aware <i>•</i> Stay Secure</span></footer>
+    </main>
+  </div>
+  <dialog class="guide-dialog" id="guide-dialog"><button class="icon-button dialog-close" type="button" aria-label="Close guide"><i data-lucide="x"></i></button><span class="eyebrow" id="dialog-category">QUICK GUIDE</span><div class="dialog-title-row"><span class="dialog-icon" id="dialog-icon"></span><h2 id="dialog-title"></h2></div><div class="guide-body" id="dialog-body"></div><div class="guide-references"><h3>Further reading</h3><ul id="dialog-references"></ul></div><div class="guide-tip"><i data-lucide="lightbulb"></i><span id="dialog-tip"></span></div><button class="primary-button" type="button" id="dialog-done">Got it <i data-lucide="check"></i></button></dialog>
+  <dialog class="hub-dialog" id="hub-dialog" aria-labelledby="hub-dialog-title"><button class="icon-button hub-dialog-close" type="button" aria-label="Close Stay Aware tool"><i data-lucide="x"></i></button><span class="eyebrow">STAY AWARE HUB</span><h2 id="hub-dialog-title"></h2><div class="hub-dialog-content" id="hub-dialog-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
